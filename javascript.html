@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My JavaScript journey - from somewhere to hero!">
+    <meta name="author" content="Emmanuel Djanga">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=123">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My JavaScript journey</title>
+</head>
+<body>
+    <header>
+        <div class="title_h1">
+            <a href="index.html" style="text-decoration: none"><h1>My JavaScript journey</h1></a>
+        </div>
+        <div class="nav_bar">
+            <li><a href="javascript.html" target="_blank">JavaScript</a></li>
+            <li><a href="web_browser.html" target="_blank">Browsers</a></li>
+            <li><a href="framework.html" target="_blank">Framework</a></li>
+            <li><a href="exercise.html" target="_blank">Exercises</a></li>
+        </div>
+    </header>
+    <main style="padding: 30px 50px 30px 50px;">
+        <section>
+            <article style="padding: 20px 0px 50px 0px; border-bottom: 1px solid #000000">
+                <h2>First few steps...</h2>
+                The first chapter aims to present values, types and operators in JavaScript (JS).<br/>
+                It starts off with an explanation of bits which is the way computers encode data.
+                This bit (pun not intended) was cool as it teaches how to convert a number in bits.<br/>
+                The idea is pretty simple: like the numerical system is based on powers of 10, the bits system is based
+                on powers of 2, e.g. 1,2,4,8 and so on. These powers can be reported in a table as follows:
+                <div id="bits_table">
+                    <table>
+                        <tr style="text-align: center;">
+                            <th>Exponent</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td> </td><td>1</td><td>2</td><td>4</td><td>8</td><td>16</td><td>32</td><td>64</td><td>128</td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td> </td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                If the second row and third row are multiplied element wise and then summed up, one obtains 15. The bits representation of 15 is given by the last row.
+                <br/><br/> How cool is that??!<br/><br/>
+                After that quick intro, values are introduced. In JS, there are 4 types of values.
+                Here is a quick overview of what they are and their characteristics
+                <div class="values">
+                    <div class="type">
+                        <h3>Numbers</h3>
+                            <ul>
+                                <li>Special numbers: Infinity, -Infinity and NaN which stands for not a number, e.g. 0/0</li>
+                                <li>These numbers do not behave like any others.</li>
+                            </ul>
+                    </div>
+                    <div class="type">
+                        <h3>Strings</h3>
+                            <ul>
+                                <li>Single quotes, double quotes, or backticks to mark strings, i.e. 'strings', "strings"
+                                 `strings`.</li>
+                                <li>Template literate: ${number} --> will convert number into a string at that
+                                    location.</li>
+                            </ul>
+                    </div>
+                    <div class="type">
+                        <h3>Booleans values</h3>
+                        <ul>
+                            <li>true</li>
+                            <li>false</li>
+                        </ul>
+                    </div>
+                    <div class="type">
+                        <h3>Undefined values</h3>
+                        <ul>
+                            <li>null and undefined: absence of meaningful (NaN Python).</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Operators</h3>
+                Most of the operators work like in Python and are intuitive. However, there are some behaviours and
+                features that are specific to JS. I have listed them below:
+                <ul>
+                    <li>Unitary operator</li>
+                    <dl>
+                        <dt>typeof</dt>
+                        <dd>Returns the type of the subsequent value.</dd>
+                    </dl>
+                    <li>Binary operator</li>
+                        <dt>==/!=</dt>
+                        <dd>Compares values. Note that values of the same type will have their content assessed against
+                         other while a conversion is first performed for values with different types, e.g. numbers ==
+                        string: string is converted to number and if that converted string is equal number, then true
+                         is returned. Only NaN does not equal itself.</dd>
+                        <dt>===/!==</dt>
+                    <dt>Compares vales <b>without</b> type coercion happening</dt>
+                    <li>Ternary (or conditional) operator</li>
+                    <dl>
+                        <dt>expression? true_return : false_return</dt>
+                        <dd>Compact way to return true_return if expression is true and false_return otherwise.</dd>
+                    </dl>
+                </ul>
+                <h3>Definition</h3>
+                <dl>
+                    <dd><i>Type coercion</i></dd>
+                    <dt>Phenomenon that automatically converts a value type adequately in a
+                 binary operator if two different types are involved, e.g. 8*null --> 0 [null has been converted to 0].
+                Note that the conversion does not always work as expected, e.g. string + number ---> string
+                [number is converted into a string and both strings are concatenated afterwards].</dt>
+                </dl>
+            </article>
+            <article style="padding: 50px 0px 0px 0px;">
+                <h2>The beginning of my trip!</h2>
+                    <p>
+                        The introduction chapter gave an overview of the book as well as background on programming
+                        in general. Given that I have been coding for years now in other languages, I must confess that
+                        I skipped that chapter and jumped straight into chapter 1.
+                    </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="foot_section">
+            <li><a href="https://twitter.com/emmanuel_djanga"><i class="fa fa-twitter" style="font-size: 24px; padding-right: 8px"></i></a></li>
+            <li><a href="mailto:emmanuel.djanga@live.be"><i class="fa fa-envelope" style="font-size: 24px;"></i></a></li>
+            <li><a href="https://github.com/edjanga"><i class="fa fa-github" style="font-size: 24px;"></i></a></li>
+            <li><a href="https://linkedin.com/in/emmanuel-djanga-1b494671"><i class="fa fa-linkedin" style="font-size: 24px;"></i></a></li>
+        </div>
+    </footer>
+</body>
+</html>
